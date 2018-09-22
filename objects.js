@@ -5,5 +5,6 @@ var playlist = {
   BellDivDaVoe: "Poison"
 }
 function updatePlaylist (object, key, value) {
-  Object.assign({}, playlist, {key: 'value'})
+  object[key] = value
+  return object
 }
